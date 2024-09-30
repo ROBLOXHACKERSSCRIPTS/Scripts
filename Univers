@@ -1,1 +1,27 @@
-soon
+repeat
+    task.wait()
+until game.GameId ~= nil
+repeat
+    task.wait()
+until game:IsLoaded()
+
+if getgenv().loaded then
+    return
+end
+getgenv().loaded = true
+
+universeid = game.GameId
+
+setclipboard("discord.gg/robloxhackers")
+if universeid == 383310974 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ROBLOXHACKERSSCRIPTS/Scripts/refs/heads/main/AdoptMe", true))()
+end
+if universeid == 3317771874 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ROBLOXHACKERSSCRIPTS/Scripts/refs/heads/main/PetSimulator99", true))()
+end
+if universeid == 4778845442 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ROBLOXHACKERSSCRIPTS/Scripts/main/ToiletTowerDefense", true))()
+end
+if universeid == 4777817887 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ROBLOXHACKERSSCRIPTS/Scripts/refs/heads/main/BladeBall", true))()
+end
